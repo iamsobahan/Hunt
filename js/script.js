@@ -1,4 +1,33 @@
 
+$(".backtotop").click(function(){
+  $("html").animate({
+    scrollTop: 0,
+  })
+
+})
+
+
+
+
+$(window).scroll(function(){
+ 
+  if($(window).scrollTop() > 200){
+    $(".menu").addClass("pera")
+  }
+  else{
+    $(".menu").removeClass("pera")
+  }
+
+  if($(window).scrollTop() > 2000){
+    $(".backtotop").fadeIn()
+
+  }
+  else{
+    $(".backtotop").fadeOut()
+  }
+})
+
+
 // banner slider start
 
 
@@ -110,7 +139,7 @@ $('.testimonial-slider').slick({
   nextArrow: '<i class="fas fa-chevron-down down"></i>',
   centerMode: true,
   centerPadding: "0",
-  asNavFor: ".testimonial-text-slider",
+  asNavFor: '.testimonial-text-slider',
  
   responsive: [
     {
@@ -136,9 +165,10 @@ $('.testimonial-slider').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        dots: true,
         vertical: false,
         arrows: false,
-        dots: true,
+        
         
        
        
@@ -163,7 +193,7 @@ $('.testimonial-text-slider').slick({
   speed: 300,
   slidesToShow: 1,
   slidesToScroll: 1,
-  asNavFor: ".testimonial-slider",
+  asNavFor: '.testimonial-slider',
   
  
   responsive: [
@@ -187,6 +217,7 @@ $('.testimonial-text-slider').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        
         
       }
     }

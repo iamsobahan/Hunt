@@ -54,13 +54,20 @@ body{
 
 nav {
    
-    position : absolute !important;
+    position : fixed !important;
     border-bottom: 1px solid rgba(254, 198, 0,.2);
     top:0;
     left: 0;
+    
     width: 100%;
     z-index: 9999;
+    transition: .4s;
 
+}
+
+.pera{
+    
+    background: #000!important;
 }
 
 nav ul li {
@@ -301,7 +308,7 @@ nav ul li a:hover:after{
      padding: 40px 15px 48px 15px;
      position: relative;
      transition: .4s;
-     margin-right:16px;
+     margin-right:-6px;
      
  }
  
@@ -407,7 +414,7 @@ nav ul li a:hover:after{
      padding: 40px 15px 48px 15px;
      position: relative;
      transition: .4s;
-     margin-left: 32px;
+     margin-left: -5px;
      
  }
  
@@ -927,7 +934,7 @@ nav ul li a:hover:after{
 #testimonial-part .chain {
 	background: white;
 	position: absolute;
-	left: 153px;
+	left: 223px;
 	top: 140px;
 }
 
@@ -1476,6 +1483,37 @@ nav ul li a:hover:after{
 	top: -159px;
 }
 /*  counter bottom part end */
+
+/* back to top part start */
+.backtotop {
+    display: inline-block;
+    padding: 15px;
+    background: #fec600;
+    color: black;
+    border-radius: 5px;
+    font-size: 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: .4s;
+    display: none;
+
+}
+
+.backtotop i{
+    color: black;
+    transition: .4s;
+}
+
+.backtotop:hover {
+    background: #353535;
+}
+
+.backtotop:hover i{
+    color: #fec600;
+}
+
+/*  back to top end */
 
 /*  footer part start */
 
