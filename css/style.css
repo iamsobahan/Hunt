@@ -103,6 +103,15 @@ nav ul li a:hover:after{
     width: 89%;
 }
 
+nav ul li .active{
+    color: #fec600;
+}
+
+nav ul li .active:after{
+    width: 89%;
+}
+
+
 
 /*  nav bar part end */
 
